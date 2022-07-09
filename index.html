@@ -102,20 +102,53 @@
 				<button onclick="location.href='./Repeater/index.html'" class="btn">Text Repeater</button>
 				<button onclick="location.href='./Calculator.html'" class="btn">The Calculator</button>
 			</div>
-		</div>
+		</div><br>
+		<button align="center" onclick="location.href='#4'" class="btn btn-hire">Want to hire me?</button>
 </div>
 	<hr class="hr" align="center" >
 <!--<div class="project-img"></div>-->
 </div>
 
+<div class="container" id="4">
+	<h1 align="center">Contact Now!</h1>
+	<div class="blocks blockD">
+		<div class="data">
+			<div class="contact-form">
+				<form class="cform" method="post" action="javascript:sendmail()">
+					<div class="row">
+						<input class="name" id="name" type="text" name="name" placeholder="Full name" required/>
+						<input class="email" id="email" type="email" name="email" placeholder="Email@google.com" required/>
+						<textarea class="message" id="message" name="message" placeholder="Type your Message here.." required></textarea>
+						<button type="submit" class="btn btn-form" onclick="return true;">Send Message</button>
+					</div>
+				</form>
+			</div>
+			<br>
+			<img class="map" src="Bharat.svg"><br>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="social">
+				<a target="_blank" rel="noopener noreferrer" href="https://instagram.com/programmerxd?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-google"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100069078836350"><i class="fa fa-facebook"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
+			</div>
+			<p class="copyright">ProgrammerXD © 2021</p>
+		</div>
+	</footer>
+	<hr class="hr" align="center" >	
+</div>
+
+
+
 <cavas id="cavas" height="300" width="380"></cavas>
 
-<footer>
-	<div>
-		
-	</div>
-</footer>
 <script src="./main.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </body>
 </html>

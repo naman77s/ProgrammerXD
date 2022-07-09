@@ -11,6 +11,32 @@ function closeNav(){
   menuIcon.style.transform = "rotate(0deg)";
 }
 
+//Contact Form
+function sendmail(){
+			var name = $('#name').val();
+			var email = $('#email').val();
+            var message = $('#message').val();
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Message: '+message+'<br>.';
+			console.log(name, email, message);
+
+			Email.send({
+        SecureToken:"7269406d-4b4d-4bbc-9c88-afbdb24087b3",
+				To: 'amlittleprogrammer@gmail.com',
+				From: email,
+				Subject: "Hiring",
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thanks for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is an error at sending message. ')
+					}}
+);};
+
 canvas = document.getElementById('canvas');
 context = canvas.getContext("2d");
 canvas.width = window.innerWidth-10;
@@ -103,4 +129,3 @@ draw();
 
          //setInterval(draw,160);
      },1000)}
-
