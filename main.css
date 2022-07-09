@@ -287,3 +287,6 @@ a:hover{
 @keyframes blink{
 	to{opacity:0;}
 }
+.map{
+	overflow:hidden;
+}
