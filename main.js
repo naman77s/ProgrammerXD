@@ -1,5 +1,6 @@
-/* Menu Bar Toggle */
+console.log("//Loading scripts....");
 
+// Menu Bar Toggle 
 var menuIcon = document.getElementById('menu');
 var sn = document.getElementById("Snav");
 function openNav(){
@@ -11,7 +12,7 @@ function closeNav(){
   menuIcon.style.transform = "rotate(0deg)";
 }
 
-//Contact Form
+// Contact Form
 function sendmail(){
 			var name = $('#name').val();
 			var email = $('#email').val();
@@ -20,7 +21,7 @@ function sendmail(){
 			console.log(name, email, message);
 
 			Email.send({
-        SecureToken:"7269406d-4b4d-4bbc-9c88-afbdb24087b3",
+        SecureToken:"f21936a4-0eb7-434c-9ad9-df43f1016354",
 				To: 'amlittleprogrammer@gmail.com',
 				From: email,
 				Subject: "Hiring",
@@ -37,6 +38,9 @@ function sendmail(){
 					}}
 );};
 
+console.log("//Loaded .... 75%");
+
+// Canvas Short Game
 canvas = document.getElementById('canvas');
 context = canvas.getContext("2d");
 canvas.width = window.innerWidth-10;
@@ -129,3 +133,7 @@ draw();
 
          //setInterval(draw,160);
      },1000)}
+
+
+console.log("//Loaded 100%");
+console.log("Owner - @ProgrammerXD");

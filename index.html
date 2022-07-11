@@ -2,21 +2,23 @@
 <html>
 <head>
 <title>PROGRAMMERXD</title>
+<!-- STYLESHEETS -->
 <link href="main.css" rel="stylesheet">
 <link href="responsive.css" rel="stylesheet">
+<!-- Smtp ~ contact form -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <!-- Anime.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+	<!-- no use rn :--    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>  -->
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <!-- Data Aos -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- Data Aos -->
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <!-- icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- fonts  -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+<!-- X-icon -->
 <link rel="icon" href="https://telegra.ph/file/863a2916b4699faed3271.png" type="image/x-icon">
 <!-- Meta tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -36,8 +38,9 @@
 <meta name="twitter:url" content="https://www.programmerxd.codes" />
 <meta name="twitter:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
 <meta id="themeH" name="theme-color" content="#000" />
-<meta name = "revised" content = "ProgrammerXD, 29/6/2022" />
+<meta name = "revised" content = "ProgrammerXD, 11/7/2022" />
 </head>
+<!--Menu navigation bar-->
 <header>
 	<div class="MenuBar">
 		<a href="#"><img src="./assets/img/pxd.png" class="Logo" alt="Logo" ></a>
@@ -61,11 +64,13 @@
 	</div>
 	</div>
 </header>
+<!-- Start of body-->
 <body>
+<!-- Block A ~ GREETINGS -->
 <div class="container" id="1">
 	<div class="blocks blockA">
 		<div class="data">
-			<h1> Hellow Stalker</h1> <br> 
+			<h1> Hellow <span class="lf">Stalker</span></h1> <br> 
 			<p>I am glad that you visited my WebSite . Let's explore more, just click the button below.
 			</p>
 			<button onclick="location.href='#2'" class="btn">Know more ⤵</button>
@@ -75,23 +80,24 @@
 	<hr class="hr" align="center" >
 </div>
 
+<!-- Block B ~ INTRODUCTION -->
 <div class="container" id="2">
 	<div class="blocks blockB">
 		<div class="img imgB"></div>
 		<div class="data">
-			<h1>About me</h1>
-			<p>I am a web developer since 2019, and have great skills in &lt;/javascript&gt; &amp; web-development</p>
+			<h1>About <span class="lf">me</span></h1>
+			<p>I am a <font style="color: pink;">web developer</font> since 2019, and have great skills in &lt;/javascript&gt; &amp; web-development</p>
 			<button onclick="location.href='#3'" class="btn">Check my Projects ⤵</button>
 		</div>
-</div>
-
+	</div>
 	<hr class="hr" align="center" >	
 </div>
 
+<!-- Block C ~ PROJECTS -->
 <div class="container projects" id="3">
+	<h1 align="center">My <span class="lf">Projects</span></h1>
 	<div class="blocks blockC">
 		<div class="data">
-			<h1 align="center">My Projects</h1>
 			<div class="list">
 				<button onclick="location.href='./Money-Game/index.html'" class="btn">Squid/Money Game</button>
 				<button onclick="location.href='./RoadToInfinity/index.html'" class="btn">RTI - Game</button>
@@ -104,15 +110,30 @@
 				<button onclick="location.href='./Calculator.html'" class="btn">The Calculator</button>
 			</div>
 		</div><br>
-		<button align="center" onclick="location.href='#4'" class="btn btn-hire">Want to hire me?</button>
+		<button align="center" onclick="location.href='#5'" class="btn btn-hire">Want to hire me?</button>
 </div>
 	<hr class="hr" align="center" >
-<!--<div class="project-img"></div>-->
+		<!--<div class="project-img"></div>-->
 </div>
 
+<!-- Block D ~ STATISTICS -->
 <div class="container" id="4">
-	<h1 align="center">Contact Now!</h1>
+	<h1 align="center">Statistics</h1>
 	<div class="blocks blockD">
+		<a class="stats" href="https://github.com/naman77s">
+			<img align="center" src="https://github-readme-stats.vercel.app/api?username=naman77s&show_icons=true&theme=radical" />
+		</a>
+		<a class="stats-lang" href="https://github.com/naman77s">
+			<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=naman77s&layout=compact&theme=radical" />
+		</a>
+	</div>
+	<hr class="hr hrD" align="center" >
+</div>
+
+<!-- Block E ~ CONTACT ME -->
+<div class="container" id="5">
+	<h1 align="center">Contact Now!</h1>
+	<div class="blocks blockE">
 		<div class="data">
 			<div class="contact-form">
 				<form class="cform" method="post" action="javascript:sendmail()">
@@ -145,11 +166,11 @@
 </div>
 
 
+<!-- Last Block ~ SHORT CANVAS GANE-->
+	<!-- not in use rn :-- <cavas id="cavas" height="300" width="380"></cavas>  -->
 
-<cavas id="cavas" height="300" width="380"></cavas>
-
+<!-- loading scripts... -->
 <script src="./main.js"></script>
-
 </body>
 </body>
 </html>
