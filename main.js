@@ -1,17 +1,47 @@
 console.log("//Loading scripts....");
-
+// Sounds
+var audio = new Audio('./assets/sounds/click.mp3');
+	audio.defaultPlaybackRate = 1.7;
+	audio.load();
+console.log("//Loaded .... 25%");
 // Menu Bar Toggle 
 var menuIcon = document.getElementById('menu');
 var sn = document.getElementById("Snav");
+
 function openNav(){
-  sn.style.left = "0";
-  menuIcon.style.transform = "rotate(1800deg) translateX(0%)";
+	if(sn.style.left = "-120vw"){
+		sn.style.left = "0";
+		menuIcon.style.transform = "rotate(1800deg) translateX(0%)";
+	}else{};
+	changeCross();
+  	menu.setAttribute("onclick" , "openNav2()");
 }
 function closeNav(){
-  sn.style.left = "-120vw";
-  menuIcon.style.transform = "rotate(0deg)";
+	sn.style.left = "-120vw";
+	menuIcon.style.transform = "rotate(0deg)";
+	changeHB();
 }
-
+function openNav2(){
+	if(sn.style.left = "0"){
+		sn.style.left = "-120vw"; 
+	};
+	changeHB();
+	menu.setAttribute("onclick" , "openNav()");
+}
+//Function to Change the Hamburger icon
+var equationValue = new Array("",'&#10005;'+1,'&#9776;'+1,0,2,3);
+var mdiv = document.createElement("div");
+function changeCross(){
+	mdiv.innerHTML = equationValue[1];
+	menu.value = (mdiv.textContent || mdiv.innerText);
+	audio.play();
+};
+function changeHB(){
+	mdiv.innerHTML = equationValue[2];
+	menu.value = (mdiv.textContent || mdiv.innerText);
+	menuIcon.style.transform = "rotate(-1800deg) translateX(0%)";
+	audio.play();
+};
 // Contact Form
 function sendmail(){
 			var name = $('#name').val();
